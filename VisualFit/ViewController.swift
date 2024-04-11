@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        print("Welcome to VisalFit")
         super.viewDidLoad()
     }
 
