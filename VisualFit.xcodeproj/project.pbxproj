@@ -13,6 +13,8 @@
 		630F2F122BC6338400FF9C08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630F2F102BC6338400FF9C08 /* Main.storyboard */; };
 		630F2F142BC6338500FF9C08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630F2F132BC6338500FF9C08 /* Assets.xcassets */; };
 		630F2F172BC6338500FF9C08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630F2F152BC6338500FF9C08 /* LaunchScreen.storyboard */; };
+		6312E6D72BCFE82200627454 /* FitnessGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312E6D62BCFE82200627454 /* FitnessGoalViewController.swift */; };
+		63B587B42BCFCB7100DE0C95 /* SetGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B587B32BCFCB7100DE0C95 /* SetGoalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		630F2F132BC6338500FF9C08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		630F2F162BC6338500FF9C08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		630F2F182BC6338500FF9C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6312E6D62BCFE82200627454 /* FitnessGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessGoalViewController.swift; sourceTree = "<group>"; };
+		63B587B32BCFCB7100DE0C95 /* SetGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		630F2F092BC6338400FF9C08 /* VisualFit */ = {
 			isa = PBXGroup;
 			children = (
+				63B587B22BCFCB5000DE0C95 /* Controllers */,
 				630F2F0A2BC6338400FF9C08 /* AppDelegate.swift */,
 				630F2F0C2BC6338400FF9C08 /* SceneDelegate.swift */,
 				630F2F0E2BC6338400FF9C08 /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				630F2F182BC6338500FF9C08 /* Info.plist */,
 			);
 			path = VisualFit;
+			sourceTree = "<group>";
+		};
+		63B587B22BCFCB5000DE0C95 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				63B587B32BCFCB7100DE0C95 /* SetGoalViewController.swift */,
+				6312E6D62BCFE82200627454 /* FitnessGoalViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6312E6D72BCFE82200627454 /* FitnessGoalViewController.swift in Sources */,
+				63B587B42BCFCB7100DE0C95 /* SetGoalViewController.swift in Sources */,
 				630F2F0F2BC6338400FF9C08 /* ViewController.swift in Sources */,
 				630F2F0B2BC6338400FF9C08 /* AppDelegate.swift in Sources */,
 				630F2F0D2BC6338400FF9C08 /* SceneDelegate.swift in Sources */,
