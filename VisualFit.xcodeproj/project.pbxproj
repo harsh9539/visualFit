@@ -15,6 +15,7 @@
 		630F2F172BC6338500FF9C08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630F2F152BC6338500FF9C08 /* LaunchScreen.storyboard */; };
 		6312E6D72BCFE82200627454 /* FitnessGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312E6D62BCFE82200627454 /* FitnessGoalViewController.swift */; };
 		63B587B42BCFCB7100DE0C95 /* SetGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B587B32BCFCB7100DE0C95 /* SetGoalViewController.swift */; };
+		63D3673C2BD0E00E004E61B0 /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3673B2BD0E00E004E61B0 /* PersonalDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		630F2F182BC6338500FF9C08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6312E6D62BCFE82200627454 /* FitnessGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessGoalViewController.swift; sourceTree = "<group>"; };
 		63B587B32BCFCB7100DE0C95 /* SetGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalViewController.swift; sourceTree = "<group>"; };
+		63D3673B2BD0E00E004E61B0 /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			children = (
 				63B587B32BCFCB7100DE0C95 /* SetGoalViewController.swift */,
 				6312E6D62BCFE82200627454 /* FitnessGoalViewController.swift */,
+				63D3673B2BD0E00E004E61B0 /* PersonalDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6312E6D72BCFE82200627454 /* FitnessGoalViewController.swift in Sources */,
+				63D3673C2BD0E00E004E61B0 /* PersonalDetailsViewController.swift in Sources */,
 				63B587B42BCFCB7100DE0C95 /* SetGoalViewController.swift in Sources */,
 				630F2F0F2BC6338400FF9C08 /* ViewController.swift in Sources */,
 				630F2F0B2BC6338400FF9C08 /* AppDelegate.swift in Sources */,
