@@ -1,16 +1,39 @@
 import UIKit
 
-class FitnessGoalViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class FitnessGoalViewController: UIViewController  {
     @IBOutlet weak var pickerView: UIPickerView!
+    
+  
+    @IBOutlet weak var img1Button: UIButton!
+    @IBOutlet weak var img2Button: UIButton!
     let arr = Array(1...7)
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the
+        
         overrideUserInterfaceStyle = .dark
         pickerView.delegate = self
         pickerView.dataSource = self
+        
+        img1Button.layer.cornerRadius = 75
+        img1Button.clipsToBounds = true
+        img1Button.backgroundColor = .primary
+        img1Button.tintColor = .white
+        
+        
+        img2Button.layer.cornerRadius = 75
+        img2Button.clipsToBounds = true
+
     }
+    
+    
+    
+}
+
+
+extension FitnessGoalViewController : UIPickerViewDelegate, UIPickerViewDataSource{
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         arr.count
     }

@@ -7,6 +7,21 @@
 
 import UIKit
 
+extension UIColor {
+    static var random: UIColor{
+        let red = CGFloat.random(in: 0...1)
+        let green = CGFloat.random(in: 0...1)
+        let blue = CGFloat.random(in: 0...1)
+        return UIColor(red: red, green: green, blue: blue, alpha: 0.5)
+    }
+    static var primary: UIColor {
+        let red = CGFloat(239)
+        let green = CGFloat(240)
+        let blue = CGFloat(0)
+        return UIColor(red: red, green: green, blue: blue, alpha: 1)
+    }
+}
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

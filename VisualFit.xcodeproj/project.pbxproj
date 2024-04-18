@@ -16,6 +16,8 @@
 		6312E6D72BCFE82200627454 /* FitnessGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6312E6D62BCFE82200627454 /* FitnessGoalViewController.swift */; };
 		63B587B42BCFCB7100DE0C95 /* SetGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B587B32BCFCB7100DE0C95 /* SetGoalViewController.swift */; };
 		63D3673C2BD0E00E004E61B0 /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3673B2BD0E00E004E61B0 /* PersonalDetailsViewController.swift */; };
+		63D3673F2BD0E848004E61B0 /* CustomGoalUIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D3673E2BD0E848004E61B0 /* CustomGoalUIPickerView.swift */; };
+		63D367412BD0F240004E61B0 /* StartJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D367402BD0F240004E61B0 /* StartJourneyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		6312E6D62BCFE82200627454 /* FitnessGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessGoalViewController.swift; sourceTree = "<group>"; };
 		63B587B32BCFCB7100DE0C95 /* SetGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGoalViewController.swift; sourceTree = "<group>"; };
 		63D3673B2BD0E00E004E61B0 /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
+		63D3673E2BD0E848004E61B0 /* CustomGoalUIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGoalUIPickerView.swift; sourceTree = "<group>"; };
+		63D367402BD0F240004E61B0 /* StartJourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartJourneyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		630F2F092BC6338400FF9C08 /* VisualFit */ = {
 			isa = PBXGroup;
 			children = (
+				63D3673D2BD0E830004E61B0 /* Components */,
 				63B587B22BCFCB5000DE0C95 /* Controllers */,
 				630F2F0A2BC6338400FF9C08 /* AppDelegate.swift */,
 				630F2F0C2BC6338400FF9C08 /* SceneDelegate.swift */,
@@ -80,8 +85,17 @@
 				63B587B32BCFCB7100DE0C95 /* SetGoalViewController.swift */,
 				6312E6D62BCFE82200627454 /* FitnessGoalViewController.swift */,
 				63D3673B2BD0E00E004E61B0 /* PersonalDetailsViewController.swift */,
+				63D367402BD0F240004E61B0 /* StartJourneyViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		63D3673D2BD0E830004E61B0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				63D3673E2BD0E848004E61B0 /* CustomGoalUIPickerView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D367412BD0F240004E61B0 /* StartJourneyViewController.swift in Sources */,
 				6312E6D72BCFE82200627454 /* FitnessGoalViewController.swift in Sources */,
+				63D3673F2BD0E848004E61B0 /* CustomGoalUIPickerView.swift in Sources */,
 				63D3673C2BD0E00E004E61B0 /* PersonalDetailsViewController.swift in Sources */,
 				63B587B42BCFCB7100DE0C95 /* SetGoalViewController.swift in Sources */,
 				630F2F0F2BC6338400FF9C08 /* ViewController.swift in Sources */,
