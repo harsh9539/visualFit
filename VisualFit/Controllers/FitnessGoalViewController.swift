@@ -24,9 +24,21 @@ class FitnessGoalViewController: UIViewController  {
         
         img2Button.layer.cornerRadius = 75
         img2Button.clipsToBounds = true
+        img2Button.tintColor = .white
 
     }
     
+    @IBAction func handleBtnSwitch(_ sender: UIButton) {
+        let btnTxt = sender.titleLabel?.text!
+        if btnTxt == "Img1"{
+            img1Button.backgroundColor = .primary
+            img2Button.backgroundColor = .clear
+        }
+        else{
+            img2Button.backgroundColor = .primary
+            img1Button.backgroundColor = .clear
+        }
+    }
     
     
 }

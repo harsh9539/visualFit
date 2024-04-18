@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLm-a0-Xfw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6584" y="4"/>
+            <point key="canvasLocation" x="-1912" y="4"/>
         </scene>
         <!--Set Goal View Controller-->
         <scene sceneID="xo6-Lz-0sZ">
@@ -151,6 +151,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.93725490570000003" green="0.94117647410000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="dde-79-KzS" kind="show" id="h8Q-gZ-ycT"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qCz-eB-kzV" customClass="CustomGoalUIPickerView" customModule="VisualFit" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="396" width="393" height="162"/>
@@ -181,20 +184,14 @@
                             <constraint firstItem="82h-df-YwC" firstAttribute="leading" secondItem="wwf-Ye-oVl" secondAttribute="leading" constant="20" id="wt5-Bh-Sk9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2gw-Oh-A94">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="YyE-El-7dp">
-                            <connections>
-                                <segue destination="ZCf-fJ-OK3" kind="presentation" id="NY0-uo-SCO"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="2gw-Oh-A94"/>
                     <connections>
                         <outlet property="pickerView" destination="qCz-eB-kzV" id="7bp-QO-c6E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BmP-XH-icG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2935" y="4"/>
+            <point key="canvasLocation" x="749" y="4"/>
         </scene>
         <!--transform youself-->
         <scene sceneID="D8W-gH-FQP">
@@ -218,6 +215,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.93725490570000003" green="0.94117647410000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="aHI-jn-awY" kind="show" id="Wdh-UO-lNG"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GwK-uy-2kT">
                                 <rect key="frame" x="40" y="157.33333333333334" width="333" height="150.00000000000003"/>
@@ -229,6 +229,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Img1"/>
+                                        <connections>
+                                            <action selector="handleBtnSwitch:" destination="dde-79-KzS" eventType="touchUpInside" id="U3c-R3-xF8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZg-EZ-1cA">
                                         <rect key="frame" x="176.66666666666663" y="0.0" width="156.33333333333337" height="150"/>
@@ -237,6 +240,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Img2"/>
+                                        <connections>
+                                            <action selector="handleBtnSwitch:" destination="dde-79-KzS" eventType="touchUpInside" id="RYa-88-FUU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -262,13 +268,7 @@
                             <constraint firstItem="zxw-vp-zJE" firstAttribute="bottom" secondItem="ikG-Ds-nad" secondAttribute="bottom" constant="50" id="h6v-uU-Wiy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="transform youself" id="CTD-Ha-z6k">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="gjB-qL-Way">
-                            <connections>
-                                <segue destination="2xK-n2-7HJ" kind="presentation" id="ZeA-gc-HCd"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="transform youself" id="CTD-Ha-z6k"/>
                     <connections>
                         <outlet property="img1Button" destination="4tY-C5-PFO" id="hbe-SI-qge"/>
                         <outlet property="img2Button" destination="IZg-EZ-1cA" id="69N-H2-x4M"/>
@@ -277,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZ7-hz-Ttx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-900" y="4"/>
+            <point key="canvasLocation" x="1688" y="4"/>
         </scene>
         <!--start your journey-->
         <scene sceneID="SQq-3i-EP1">
@@ -387,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGv-7c-xYM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="883" y="4"/>
+            <point key="canvasLocation" x="2680" y="4"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Tap-Zc-qYh">
@@ -657,6 +657,9 @@
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="baseBackgroundColor" red="0.93725490570000003" green="0.94117647410000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="d8x-gI-iBP" kind="show" id="s7g-6k-FoN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rnR-Ua-ebp"/>
@@ -678,13 +681,7 @@
                             <constraint firstItem="rnR-Ua-ebp" firstAttribute="trailing" secondItem="dPI-DY-2tf" secondAttribute="trailing" constant="20" id="uuO-HC-JoF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kLM-kL-pFX">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="vhE-cN-y39">
-                            <connections>
-                                <segue destination="duC-iM-ZcC" kind="presentation" id="tG0-xt-DHb"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="kLM-kL-pFX"/>
                     <connections>
                         <outlet property="GenderUIView" destination="bZo-YO-CXx" id="SG8-EG-9Ea"/>
                         <outlet property="HeightUIView" destination="RD0-3l-eiX" id="pFk-HI-6Uu"/>
@@ -693,61 +690,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLs-RJ-2IP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4828" y="4"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="EnT-cX-raE">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="duC-iM-ZcC" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H1P-cP-SHF">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="d8x-gI-iBP" kind="relationship" relationship="rootViewController" id="aFC-xj-hIY"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xyz-X8-eYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3862" y="4"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Jxz-f4-Ywf">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZCf-fJ-OK3" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="anS-5u-9Xg">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="dde-79-KzS" kind="relationship" relationship="rootViewController" id="aLE-A3-yuB"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZmB-gL-AhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1825" y="4"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="R7w-AZ-COP">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2xK-n2-7HJ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cjJ-Kk-kB1">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="aHI-jn-awY" kind="relationship" relationship="rootViewController" id="ZPl-dI-HhJ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sd5-Rm-suf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="13" y="4"/>
+            <point key="canvasLocation" x="-155" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R5B-i2-A6W">
@@ -765,7 +708,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgC-Zq-I8O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5735" y="4"/>
+            <point key="canvasLocation" x="-1062" y="4"/>
         </scene>
     </scenes>
     <resources>
