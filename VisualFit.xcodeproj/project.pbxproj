@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F6EBD2A2BD2A38F00120BE5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6EBD292BD2A38F00120BE5 /* ProfileViewController.swift */; };
+		3F6F6F1B2BD4209D00E0E4AA /* UserAccountDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6F6F1A2BD4209D00E0E4AA /* UserAccountDataModel.swift */; };
 		630F2F0B2BC6338400FF9C08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F2F0A2BC6338400FF9C08 /* AppDelegate.swift */; };
 		630F2F0D2BC6338400FF9C08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F2F0C2BC6338400FF9C08 /* SceneDelegate.swift */; };
 		630F2F0F2BC6338400FF9C08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630F2F0E2BC6338400FF9C08 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F6EBD292BD2A38F00120BE5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3F6F6F1A2BD4209D00E0E4AA /* UserAccountDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountDataModel.swift; sourceTree = "<group>"; };
 		630F2F072BC6338400FF9C08 /* VisualFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		630F2F0A2BC6338400FF9C08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		630F2F0C2BC6338400FF9C08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 				630F2F0C2BC6338400FF9C08 /* SceneDelegate.swift */,
 				630F2F0E2BC6338400FF9C08 /* ViewController.swift */,
 				630F2F102BC6338400FF9C08 /* Main.storyboard */,
+				3F6F6F1A2BD4209D00E0E4AA /* UserAccountDataModel.swift */,
 				630F2F132BC6338500FF9C08 /* Assets.xcassets */,
 				630F2F152BC6338500FF9C08 /* LaunchScreen.storyboard */,
 				630F2F182BC6338500FF9C08 /* Info.plist */,
@@ -86,6 +91,7 @@
 				6312E6D62BCFE82200627454 /* FitnessGoalViewController.swift */,
 				63D3673B2BD0E00E004E61B0 /* PersonalDetailsViewController.swift */,
 				63D367402BD0F240004E61B0 /* StartJourneyViewController.swift */,
+				3F6EBD292BD2A38F00120BE5 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -169,12 +175,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6F6F1B2BD4209D00E0E4AA /* UserAccountDataModel.swift in Sources */,
 				63D367412BD0F240004E61B0 /* StartJourneyViewController.swift in Sources */,
 				6312E6D72BCFE82200627454 /* FitnessGoalViewController.swift in Sources */,
 				63D3673F2BD0E848004E61B0 /* CustomGoalUIPickerView.swift in Sources */,
 				63D3673C2BD0E00E004E61B0 /* PersonalDetailsViewController.swift in Sources */,
 				63B587B42BCFCB7100DE0C95 /* SetGoalViewController.swift in Sources */,
 				630F2F0F2BC6338400FF9C08 /* ViewController.swift in Sources */,
+				3F6EBD2A2BD2A38F00120BE5 /* ProfileViewController.swift in Sources */,
 				630F2F0B2BC6338400FF9C08 /* AppDelegate.swift in Sources */,
 				630F2F0D2BC6338400FF9C08 /* SceneDelegate.swift in Sources */,
 			);

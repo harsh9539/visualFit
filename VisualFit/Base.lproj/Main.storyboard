@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mhT-F2-P58">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mhT-F2-P58">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -340,6 +340,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="baseForegroundColor" red="0.93725490570000003" green="0.94117647410000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="emK-5b-Vrt" kind="show" id="wxv-dZ-WGj"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -389,6 +392,52 @@
             </objects>
             <point key="canvasLocation" x="883" y="4"/>
         </scene>
+        <!--Retake-->
+        <scene sceneID="xcJ-TQ-eCf">
+            <objects>
+                <viewController id="emK-5b-Vrt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jb3-g0-CJC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="HomeTop" translatesAutoresizingMaskIntoConstraints="NO" id="hQX-93-ujK">
+                                <rect key="frame" x="16" y="80" width="361" height="623"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VmP-zi-Z7i">
+                                <rect key="frame" x="0.0" y="711" width="393" height="121"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20g-VQ-I4V">
+                                        <rect key="frame" x="20" y="38" width="353" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="tjB-N3-MmG"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Upload">
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.93725490570000003" green="0.94117647410000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ljW-Z8-neX"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VmP-zi-Z7i" secondAttribute="bottom" id="8TS-eB-89y"/>
+                            <constraint firstItem="ljW-Z8-neX" firstAttribute="trailing" secondItem="VmP-zi-Z7i" secondAttribute="trailing" id="Ksm-nX-q7r"/>
+                            <constraint firstItem="VmP-zi-Z7i" firstAttribute="top" secondItem="hQX-93-ujK" secondAttribute="bottom" id="Qw1-de-NEh"/>
+                            <constraint firstItem="VmP-zi-Z7i" firstAttribute="leading" secondItem="ljW-Z8-neX" secondAttribute="leading" id="Vky-fv-n6T"/>
+                            <constraint firstItem="VmP-zi-Z7i" firstAttribute="top" secondItem="hQX-93-ujK" secondAttribute="bottom" constant="5" id="cb5-1j-9qT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Retake" id="rj1-zy-NRc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E01-QX-3Hl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2059" y="4"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Tap-Zc-qYh">
             <objects>
@@ -427,15 +476,36 @@
             </objects>
             <point key="canvasLocation" x="9216.0305343511445" y="153.52112676056339"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="hmD-L7-fKL">
             <objects>
-                <viewController id="Q3o-Tw-Gqw" sceneMemberID="viewController">
+                <viewController id="Q3o-Tw-Gqw" customClass="ProfileViewController" customModule="VisualFit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PV7-Dj-jqO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8Vw-W7-h4Q">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Cj-oz-rID">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="666"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2Cj-oz-rID" secondAttribute="trailing" id="51N-j0-iD8"/>
+                                    <constraint firstItem="2Cj-oz-rID" firstAttribute="leading" secondItem="8Vw-W7-h4Q" secondAttribute="leading" id="CLg-pb-ciD"/>
+                                    <constraint firstItem="2Cj-oz-rID" firstAttribute="top" secondItem="8Vw-W7-h4Q" secondAttribute="top" id="PtD-0L-MeM"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="kVS-io-xIl"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Vw-W7-h4Q" firstAttribute="top" secondItem="PV7-Dj-jqO" secondAttribute="topMargin" id="KWJ-GY-5E3"/>
+                            <constraint firstItem="kVS-io-xIl" firstAttribute="trailing" secondItem="8Vw-W7-h4Q" secondAttribute="trailing" id="aB6-As-0Fb"/>
+                            <constraint firstItem="8Vw-W7-h4Q" firstAttribute="leading" secondItem="kVS-io-xIl" secondAttribute="leading" id="d1K-UV-HzU"/>
+                            <constraint firstItem="kVS-io-xIl" firstAttribute="bottom" secondItem="8Vw-W7-h4Q" secondAttribute="bottom" id="x3c-Wy-Ivx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bb9-8g-Zrv"/>
                 </viewController>
@@ -768,7 +838,9 @@
             <point key="canvasLocation" x="-5735" y="4"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.93725490199999995" green="0.94117647059999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
+        <image name="HomeTop" width="273" height="189"/>
         <image name="Sample" width="512" height="512"/>
         <image name="apple.logo" catalog="system" width="105" height="128"/>
         <image name="camera.fill" catalog="system" width="128" height="93"/>
