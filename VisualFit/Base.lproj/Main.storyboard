@@ -193,7 +193,7 @@
             </objects>
             <point key="canvasLocation" x="749" y="4"/>
         </scene>
-        <!--transform youself-->
+        <!--Fitness Goal View Controller-->
         <scene sceneID="D8W-gH-FQP">
             <objects>
                 <viewController id="dde-79-KzS" customClass="FitnessGoalViewController" customModule="VisualFit" customModuleProvider="target" sceneMemberID="viewController">
@@ -268,7 +268,7 @@
                             <constraint firstItem="zxw-vp-zJE" firstAttribute="bottom" secondItem="ikG-Ds-nad" secondAttribute="bottom" constant="50" id="h6v-uU-Wiy"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="transform youself" id="CTD-Ha-z6k"/>
+                    <navigationItem key="navigationItem" id="CTD-Ha-z6k"/>
                     <connections>
                         <outlet property="img1Button" destination="4tY-C5-PFO" id="hbe-SI-qge"/>
                         <outlet property="img2Button" destination="IZg-EZ-1cA" id="69N-H2-x4M"/>
@@ -279,7 +279,7 @@
             </objects>
             <point key="canvasLocation" x="1688" y="4"/>
         </scene>
-        <!--start your journey-->
+        <!--Start Journey View Controller-->
         <scene sceneID="SQq-3i-EP1">
             <objects>
                 <viewController id="aHI-jn-awY" customClass="StartJourneyViewController" customModule="VisualFit" customModuleProvider="target" sceneMemberID="viewController">
@@ -378,7 +378,7 @@
                             <constraint firstItem="n0n-Sb-95I" firstAttribute="top" secondItem="MlT-lc-Gql" secondAttribute="bottom" constant="25" id="xYA-ye-E6x"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="start your journey" id="7bL-ZI-KEw">
+                    <navigationItem key="navigationItem" id="7bL-ZI-KEw">
                         <barButtonItem key="rightBarButtonItem" title="Done" id="5wm-OL-DD7"/>
                     </navigationItem>
                     <connections>
@@ -570,6 +570,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Not Set">
                                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="genderBtn:" destination="ynW-Qt-Vg4" eventType="touchUpInside" id="UTO-hC-MJe"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.45490196350000001" green="0.45490196350000001" blue="0.50196081400000003" alpha="0.18000000720000001" colorSpace="custom" customColorSpace="sRGB"/>
@@ -661,6 +664,41 @@
                                     <segue destination="d8x-gI-iBP" kind="show" id="s7g-6k-FoN"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wLp-Ls-Uwv">
+                                <rect key="frame" x="0.0" y="582" width="393" height="260"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fn-ge-TUs">
+                                        <rect key="frame" x="20" y="10" width="353" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Rcf-pq-VDj"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.93725490570000003" green="0.94117647410000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Done"/>
+                                        <connections>
+                                            <action selector="genderDoneBtn:" destination="ynW-Qt-Vg4" eventType="touchUpInside" id="UYw-Ee-f4C"/>
+                                        </connections>
+                                    </button>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V9i-EE-D9V">
+                                        <rect key="frame" x="0.0" y="34" width="393" height="216"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                <color key="value" red="0.93725490570000003" green="0.94117647410000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1719730347" green="0.1719730347" blue="0.1719730347" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="0fn-ge-TUs" firstAttribute="leading" secondItem="wLp-Ls-Uwv" secondAttribute="leading" constant="20" id="5gc-i2-evN"/>
+                                    <constraint firstAttribute="trailing" secondItem="0fn-ge-TUs" secondAttribute="trailing" constant="20" id="Acl-9x-hYY"/>
+                                    <constraint firstAttribute="height" constant="260" id="Csb-Jl-eci"/>
+                                    <constraint firstAttribute="trailing" secondItem="V9i-EE-D9V" secondAttribute="trailing" id="Eub-Ty-rcI"/>
+                                    <constraint firstAttribute="bottom" secondItem="V9i-EE-D9V" secondAttribute="bottom" constant="10" id="Sma-0U-9gF"/>
+                                    <constraint firstItem="V9i-EE-D9V" firstAttribute="leading" secondItem="wLp-Ls-Uwv" secondAttribute="leading" id="hHb-7J-HxP"/>
+                                    <constraint firstItem="0fn-ge-TUs" firstAttribute="top" secondItem="wLp-Ls-Uwv" secondAttribute="top" constant="10" id="nWQ-v0-X1x"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rnR-Ua-ebp"/>
                         <color key="backgroundColor" red="0.1137254909" green="0.1137254909" blue="0.1137254909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -675,7 +713,10 @@
                             <constraint firstItem="dPI-DY-2tf" firstAttribute="leading" secondItem="rnR-Ua-ebp" secondAttribute="leading" constant="20" id="VqJ-yE-exY"/>
                             <constraint firstItem="SkO-6H-aVi" firstAttribute="top" secondItem="dPI-DY-2tf" secondAttribute="bottom" constant="60" id="cUJ-te-Lr9"/>
                             <constraint firstItem="Mpm-CG-nFn" firstAttribute="leading" secondItem="rnR-Ua-ebp" secondAttribute="leading" constant="160" id="h5S-yq-G2X"/>
+                            <constraint firstItem="rnR-Ua-ebp" firstAttribute="trailing" secondItem="wLp-Ls-Uwv" secondAttribute="trailing" id="jxw-I7-SER"/>
+                            <constraint firstItem="rnR-Ua-ebp" firstAttribute="bottom" secondItem="wLp-Ls-Uwv" secondAttribute="bottom" id="kve-M4-hgA"/>
                             <constraint firstItem="rnR-Ua-ebp" firstAttribute="trailing" secondItem="SkO-6H-aVi" secondAttribute="trailing" constant="20" id="lPi-Hm-blG"/>
+                            <constraint firstItem="wLp-Ls-Uwv" firstAttribute="leading" secondItem="rnR-Ua-ebp" secondAttribute="leading" id="mwl-zg-dUX"/>
                             <constraint firstItem="GOx-3e-C9R" firstAttribute="leading" secondItem="rnR-Ua-ebp" secondAttribute="leading" constant="20" id="tUQ-Zu-ujC"/>
                             <constraint firstItem="u9J-jW-rge" firstAttribute="top" secondItem="Mpm-CG-nFn" secondAttribute="bottom" constant="20" id="umr-v9-Qp9"/>
                             <constraint firstItem="rnR-Ua-ebp" firstAttribute="trailing" secondItem="dPI-DY-2tf" secondAttribute="trailing" constant="20" id="uuO-HC-JoF"/>
@@ -686,11 +727,13 @@
                         <outlet property="GenderUIView" destination="bZo-YO-CXx" id="SG8-EG-9Ea"/>
                         <outlet property="HeightUIView" destination="RD0-3l-eiX" id="pFk-HI-6Uu"/>
                         <outlet property="WeightUIView" destination="d00-hQ-d28" id="6Jg-X0-8gm"/>
+                        <outlet property="genderModal" destination="wLp-Ls-Uwv" id="EB4-mv-tIF"/>
+                        <outlet property="genderPickerView" destination="V9i-EE-D9V" id="cwo-ne-QB1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLs-RJ-2IP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-155" y="4"/>
+            <point key="canvasLocation" x="-156.4885496183206" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R5B-i2-A6W">

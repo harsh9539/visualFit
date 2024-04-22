@@ -7,15 +7,26 @@
 
 import UIKit
 
-class PersonalDetailsViewController: UIViewController {
+class PersonalDetailsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
     @IBOutlet weak var HeightUIView: UIView!
     @IBOutlet weak var GenderUIView: UIView!
     @IBOutlet weak var WeightUIView: UIView!
+    
+    @IBOutlet weak var genderPickerView: UIPickerView!
+    
+    @IBOutlet weak var genderModal: UIView!
+    let genderArr = ["Male","Female","Others"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        overrideUserInterfaceStyle = .dark
+        genderModal.isHidden = true
+        genderPickerView.delegate = self
+        genderPickerView.dataSource = self
         
         /// Gender UI View changes
+        
         // Add rounded corners to top left and top right
         let maskPath = UIBezierPath(roundedRect: GenderUIView.bounds,
                                     byRoundingCorners: [.topLeft, .topRight],
@@ -47,5 +58,34 @@ class PersonalDetailsViewController: UIViewController {
         
     }
     
+    @IBAction func genderBtn(_ sender: UIButton) {
+        
+        UIView.animate(withDuration: 10) {
+            self.genderModal.isHidden = false
+        }
+    }
+    
+    @IBAction func genderDoneBtn(_ sender: UIButton) {
 
+        UIView.animate(withDuration: 10) {
+            self.genderModal.isHidden = true
+        }
+    }
+    
+}
+
+
+
+extension PersonalDetailsViewController{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        genderArr.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return genderArr[row]
+    }
+    
 }
